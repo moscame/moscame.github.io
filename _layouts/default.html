@@ -59,6 +59,7 @@
 		img {
 			margin: 0 auto;
 			display: block;
+			max-width: 100%;
 		}
 		#markdown-toc {
 			margin-top: 0;
@@ -132,6 +133,9 @@
 			padding-bottom: 0;
 			text-align: center;
 		}
+		nav img, footer img {
+			display: inline-block;
+		}
 
 		/* #Menu {
 			margin-left: 20px;
@@ -200,8 +204,8 @@
   <body>
 
     <nav>
-        <span>🏠 <a href="/">Início</a></span> &nbsp;
-        <span>🙋 <a href="/sobre">Sobre</a></span> &nbsp;
+        <span><img src="/img/botoes/ColonyRockOxygen.bmp" alt=""> <a href="/">Início</a></span> &nbsp;
+        <span><img src="/img/botoes/OrdersNotCompleted.bmp" alt=""> <a href="/sobre">Sobre</a></span> &nbsp;
         <hr>
     </nav>
     
@@ -232,7 +236,7 @@
     
 	<footer>
         <hr>
-        <span>✉️ Gostou? Odiou? Quer falar comigo? Me manda um email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></span><br>
+        <span><img src="/img/botoes/satelite.bmp" alt=""> Gostou? Odiou? Quer falar comigo? Me manda um email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></span><br>
         <span>mosca.me &copy; Filipe Mosca 2019-2023</span>
         <p>
 			<a href="https://jigsaw.w3.org/css-validator/check/referer">
