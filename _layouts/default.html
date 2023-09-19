@@ -1,3 +1,15 @@
+<!--
+Created by Filipe Mosca
+Homepage: https://mosca.me
+
+  -. (#)(#) .-
+   '\.';;'./'
+.-\.'  ;;  './-.
+  ;    ;;    ;
+  ;   .''.   ;
+   '''    '''
+-->
+
 <!doctype html>
 <html lang="pt-BR" dir="ltr">
   <head>
@@ -25,16 +37,15 @@
         async src="//gc.zgo.at/count.js"></script>
 
     <style>
+		html, body, content {margin:0;padding:0;height:100%; width: 100%;}
 		body {
-			max-width: 800px;
-			margin: 0 auto;
-			padding:0;
+			max-width: 1000px;
 			font-family: helvetica, sans-serif;
-			color:#333;
+			margin: 0 auto;
+			padding: 0;
 			background-color:white;
 			}
 		p, em {
-			font-family: helvetica, sans-serif;
 			margin:0 0 1em 0;
 			padding: 0;
 			line-height: 1.2em;
@@ -45,17 +56,13 @@
 		h1 {
 			font-size: xx-large;
 			margin-bottom: 0.25ex;
-			text-align: center;
 			}
 		h2 {
 			/* font-size: large; */
 			margin-bottom: 0.25ex;
 			}
 
-		a {
-			/* text-decoration:none; */
-			font-family:verdana, arial, helvetica, sans-serif;
-			}
+		a:hover {background-color: rgb(255, 255, 73);}
 		img {
 			margin: 0 auto;
 			display: block;
@@ -75,9 +82,13 @@
 		}
 		#blog_posts {
 			padding-left: 15px;
+			white-space: nowrap;
+			padding-right: 10px;
+			font-size: larger;
 		}
+		#blog_posts a {text-decoration: none;}
 		#Header {
-				display: flex;
+			display: flex;
 			font-weight:600;
 			font-size: xx-large;	/* should be same as an h1 header */
 			margin:20px 0 10px 0;
@@ -96,7 +107,7 @@
 		http://glish.com/css/hacks.asp for details. */
 
 			voice-family: "\"}\"";
-			voice-family:inherit;
+			voice-family: inherit;
 			height:1ex+3px;	/* UNTESTED!  Was 14px */
 			}
 		/* I've heard this called the "be nice to Opera 5" rule. Basically, it
@@ -121,42 +132,46 @@
 		}
 
 		#Content, nav, footer {
-			margin: 0;
-			padding:10px;
+			margin-left: 160px;
+			padding: 10px;
 		}
 		footer {
 			padding-top: 0;
-			text-align: center;
 		}
 		nav {
 			margin-bottom: 0;
 			padding-bottom: 0;
-			text-align: center;
 		}
 		nav img, footer img {
 			display: inline-block;
 		}
-
-		/* #Menu {
-			margin-left: 20px;
-			float:left;
-			width:160px;
+		#sidebar {
+			margin: 0 auto;
+			float: left;
+			width: 160px;
 			padding:0.5em;
 			background-color:#eee;
 			border:1px dashed #999;
 			voice-family: "\"}\"";
-			voice-family:inherit;
+			voice-family: inherit;
 			width:8em;
-		} */
-		#Menu h2 {
+			position: absolute;
+			top: 40px;
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		#sidebar > ul li {
+			list-style-type: none;
+			list-style-image: none;
+		}
+		#sidebar h2 {
 			font-size: large;
 		}
 		#Comentarios {
 			margin-top: 25px;
-			padding:0.5em;
-			background-color:#5ab8a3;
+			padding: 0.5em;
+			background-color:#eee;
 			border:1px dashed #999;
-
 		}
 		#Comentarios h2 {margin-top: 10px;}
 
@@ -167,12 +182,12 @@
 		margin: 0;
 		}
 
-		/* body>#Menu {width:8em;}
+		body>#Menu {width:8em;}
 
-		@media print {
+		/* @media print {
 			#Content {
 				margin:0 50px 50px 0;
-				padding:10px;
+				padding: 10px;
 				}
 
 			#Menu {
@@ -180,6 +195,19 @@
 				}
 
 		} */
+
+		@media only screen and (max-width: 768px) {
+  			#sidebar {
+    			float: none;
+				position: inherit;
+				padding: 10px;
+				margin: 10px;
+			}
+			#Content, nav, footer {
+				margin-left: 0;
+				padding: 10px;
+			}
+		}
 
 		.centered {
 			text-align: center;
@@ -203,13 +231,17 @@
   </head>
   <body>
 
-    <nav>
-        <span><img src="/img/botoes/ColonyRockOxygen.bmp" alt=""> <a href="/">Início</a></span> &nbsp;
-        <span><img src="/img/botoes/OrdersNotCompleted.bmp" alt=""> <a href="/sobre">Sobre</a></span> &nbsp;
-        <hr>
+	<nav>
+        <span>🏠 <a href="/">Início</a></span> &nbsp;
+        <span>🙋 <a href="/sobre">Sobre</a></span> &nbsp;
+		<hr>
     </nav>
     
-	<!-- <div id="Menu">
+	<div id="Content">
+			{{ content }}
+	</div>
+
+	<div id="sidebar">
 		<h2>Minhas redes</h2>
 		<ul id="icons">
 		  <li>🐦 <a href="https://twitter.com/filipemosca" target="blank">Twitter</a></li>
@@ -221,22 +253,16 @@
 
 		<h2>Páginas</h2>
 		<ul id="icons">
-			<li><a href="/canal-ionico">Canal Iônico</a></li>
+			<li><a href="/canal_ionico">Canal Iônico</a></li>
 			<li><a href="">Boardgames</a></li>
 			<li><a href="">Linux & Tech</a></li>
 			<li><a href="">AoE2</a></li>
 		  </ul>
-	  </div> -->
-
-    <section>
-		<div id="Content">
-			{{ content }}
-		</div>
-    </section>
-    
+	</div>
+	
 	<footer>
         <hr>
-        <span><img src="/img/botoes/satelite.bmp" alt=""> Gostou? Odiou? Quer falar comigo? Me manda um email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></span><br>
+        <span>📩 Gostou? Odiou? Quer falar comigo? Me manda um email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></span><br>
         <span>mosca.me &copy; Filipe Mosca 2019-2023</span>
         <p>
 			<a href="https://jigsaw.w3.org/css-validator/check/referer">

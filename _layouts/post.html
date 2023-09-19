@@ -2,16 +2,17 @@
 layout: default
 ---
 
-<style>
+<!-- <style>
     body {
-        background-color: rgb(179, 230, 224);
+        background-color: rgb(193, 231, 227);
     }
-</style>
+    #sidebar {
+        background-color: rgb(197, 255, 255);
+    }
+</style> -->
 
+<h1 style="padding-top: 0; margin-top: 0;">{{ page.title }}</h1>
 
-<h1 style="text-align: center; padding-top: 0; margin-top: 0;">{{ page.title }}</h1>
-
-<hr>
 
 <i><span style="color: gray;">Publicado em {{ page.date | date: "%d-%m-%Y" }}</span><br>
 {% if page.modified %}
