@@ -32,7 +32,6 @@ plugins:
   - jekyll-feed
 
 
-
 defaults:
 -
   scope:
