@@ -1,5 +1,5 @@
 ---
-title: "Por onde estudei medicina durante o internato"
+title: "👨‍⚕️ Por onde estudei medicina durante o internato"
 category: Medicina
 modified: 2022-10-06
 ---

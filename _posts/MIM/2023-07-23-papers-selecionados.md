@@ -1,5 +1,5 @@
 ---
-title: Papers selecionados sobre temas de alto impacto na medicina
+title: 📄 Papers selecionados sobre temas de alto impacto na medicina
 category: Medicina
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Aprendendo o protocolo BLUE de USG pulmonar
+title: 🔊 Aprendendo o protocolo BLUE de USG pulmonar
 category: Medicina
 ---
 
