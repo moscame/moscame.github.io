@@ -44,3 +44,17 @@ Essa página é um compêndium de grandes e bons papers/artigos que eu considero
 ## POCUS
 
 1. USG pulmonar tem maior sensibilidade pra detectar consolidação em comparação à radiografia de tórax, mantendo a mesma especificidade, tendo como padrão ouro da comparação a realização de tomografia computadorizada -- Nazerian P, Volpicelli G, Vanni S, et al. **Accuracy of lung ultrasound for the diagnosis of consolidations when compared to chest computed tomography**. Am J Emerg Med. 2015;33(5):620-625. doi:10.1016/j.ajem.2015.01.035
+
+## Ventilação mecânica
+
+1. Noel C, Mallemat H. **Sedation and Analgesia for Mechanically Ventilated Patients in the Emergency Department**. Emerg Med Clin North Am. 2019 Aug;37(3):545-556. doi: 10.1016/j.emc.2019.04.004. Epub 2019 May 16. PMID: 31262420.
+2. Sessler CN, Gosnell MS, Grap MJ, Brophy GM, O'Neal PV, Keane KA, Tesoro EP, Elswick RK. **The Richmond Agitation-Sedation Scale: validity and reliability in adult intensive care unit patients**. Am J Respir Crit Care Med. 2002 Nov 15;166(10):1338-44. doi: 10.1164/rccm.2107138. PMID: 12421743.
+3. Nassar Junior AP, Park M. **Daily sedative interruption versus intermittent sedation in mechanically ventilated critically ill patients: a randomized trial**. Ann Intensive Care. 2014 May 6;4:14. doi: 10.1186/2110-5820-4-14. PMID: 24900938; PMCID: PMC4026117.
+
+## IAM
+
+1. A 4ª definição universal de IAM -- Thygesen K, Alpert JS, Jaffe AS, Chaitman BR, Bax JJ, Morrow DA, White HD; Executive Group on behalf of the Joint European Society of Cardiology (ESC)/American College of Cardiology (ACC)/American Heart Association (AHA)/World Heart Federation (WHF) Task Force for the Universal Definition of Myocardial Infarction. **Fourth Universal Definition of Myocardial Infarction (2018)**. Circulation. 2018 Nov 13;138(20):e618-e651. doi: 10.1161/CIR.0000000000000617. Erratum in: Circulation. 2018 Nov 13;138(20):e652. PMID: 30571511.
+
+## Outras causas de Supra de ST que não IAM
+
+1. Wang K, Asinger RW, Marriott HJ. **ST-segment elevation in conditions other than acute myocardial infarction**. N Engl J Med. 2003 Nov 27;349(22):2128-35. doi: 10.1056/NEJMra022580. PMID: 14645641.

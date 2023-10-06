@@ -1,0 +1,45 @@
+---
+layout: default
+title: MIM
+---
+
+<style>
+  ul li {
+  list-style-type: none;
+  }
+  body {
+    background-color: rgb(11, 35, 143);
+    color: rgb(240, 240, 240);
+  }
+  a {
+    color: rgb(201, 216, 255);
+  }
+  a:hover {
+    color: rgb(5, 31, 95);
+  }
+  #sidebar {
+			background-color:#403199;
+			border:1px dashed #745ddb;
+	}
+</style>
+
+<!-- <img width="300px" src="/img/logo-canal-ionico.png" alt="">
+<br> -->
+<img style="margin-top: 15px; float: right ;" src="/img/logo/moscame-graos.png" alt="">
+
+
+<h1 style="font-size: 45px; margin-top: 0;"><span style="color: yellow;">M</span>edicina <br><span style="color: yellow;">I</span>nterna de <br><span style="color: yellow;">M</span>osca</h1>
+
+
+<h2>Tópicos</h2>
+<ul id="blog_posts">
+{% for post in site.categories.Medicina %}
+  <li>
+    <span><a href="{{ post.url }}">{{ post.title }}</a></span> <span class="{{ post.category }}"></span>
+  </li>
+{% endfor %}
+</ul>
+
+<br>
+
+<img width="80px" src="/img/medicina/viva_a_CM.jpg" alt="">
